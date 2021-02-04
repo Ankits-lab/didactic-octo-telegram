@@ -1,0 +1,169 @@
+body {
+  scroll-behavior: smooth;
+  background-color: #3a3a3a;
+  background: linear-gradient(308deg, #ff3f00, #ff7700, #5c2ffc, #a58cff);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.avatar > img {
+  border-radius: 50%;
+  max-width: 180px;
+  max-height: 180px;
+}
+
+#main {
+  border-radius: 50px !important;
+}
+
+/* Downloads */
+#downloads {
+  display: flex;
+  padding: 1em;
+}
+
+#left {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  max-width: 350px;
+}
+
+#left > ul {
+  list-style-type: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+}
+
+#right {
+  margin: 0;
+  padding: 0;
+  flex-grow: 4;
+  border: 1px rgba(222, 222, 222, 0.75) solid;
+  border-radius: 8px;
+}
+
+#footer {
+  justify-content: center;
+}
+
+#footer > h2 {
+  margin: auto;
+  margin-bottom: 1.5em;
+  width: auto;
+}
+
+#links {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+#ancient_footer {
+  margin: 0 4em 0 4em;
+}
+
+#ancient_footer > h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#ancient_footer > h2 {
+  font-weight: 400;
+  font-size: 50px;
+  text-align: Left;
+}
+
+#ancient_footer > p {
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 736px) {
+  #links {
+    flex-direction: column;
+  }
+
+  #ancient_footer {
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #footer > h2 {
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+
+  #footer .copyright {
+    text-align: center !important;
+  }
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  border-radius: 20px;
+}

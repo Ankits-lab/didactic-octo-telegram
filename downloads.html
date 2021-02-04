@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AncientOS Download</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+  <link rel="stylesheet" href="assets/css/ancient.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/downloads.css" />
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+      <h1 id="total">Downloads</h1>
+      <p style="color: antiquewhite">Find AncientOS for your device here!</p>
+      <a href="index.html" class="button primary small" style="margin-bottom: 2em"><i class="fas fa-undo-alt"
+          style="margin-right: 1em"></i>Back</a>
+    </header>
+
+    <!-- Device list -->
+    <div id="downloads">
+      <div id="device-list">
+        <div id="poco-button" class="oem-button" onClick="shareListHideShow('poco')">
+          Pocophone
+        </div>
+        <div id="poco" class="oem hide">
+          <div class="device-name" id="beryllium">
+            <p>F1 <span>beryllium</span></p>
+          </div>
+          <div class="device-name" id="surya">
+            <p>X3 NFC <span>surya</span></p>
+          </div>
+        </div>
+
+        <div id="redmi-button" class="oem-button" onClick="shareListHideShow('redmi')">
+          Redmi
+        </div>
+        <div id="redmi" class="oem hide">
+          <div class="device-name" id="whyred">
+            <p>Note 5 Pro <span>whyred</span></p>
+          </div>
+          <div class="device-name" id="lavender">
+            <p>Note 7/7s <span>lavender</span></p>
+          </div>
+          <div class="device-name" id="mido">
+            <p>Note 4 <span>mido</span></p>
+          </div>
+          <div class="device-name" id="ginkgo">
+            <p>Note 8/8T <span>ginkgo/willow</span></p>
+          </div>
+          <div class="device-name" id="begonia">
+            <p>Note 8 Pro <span>begonia</span></p>
+          </div>
+          <div class="device-name" id="ulysse">
+            <p>Note 5A Lite/Prime <span>ulysse</span></p>
+          </div>
+          <div class="device-name" id="tissot">
+            <p>A1 <span>tissot</span></p>
+          </div>
+          <div class="device-name" id="miatoll">
+            <p>Note 9S/9Pro/9Pro Max <span>miatoll</span></p>
+          </div>
+          <div class="device-name" id="ysl">
+            <p>S2/Y2 <span>ysl</span></p>
+          </div>
+        </div>
+
+        <div id="realme-button" class="oem-button" onClick="shareListHideShow('realme')">
+          Realme
+        </div>
+        <div id="realme" class="oem hide">
+          <div class="device-name" id="RMX1901">
+            <p>X <span>RMX1901</span></p>
+          </div>
+          <div class="device-name" id="RMX1921">
+            <p>XT <span>RMX1921</span></p>
+          </div>
+        </div>
+
+        <div id="asus-button" class="oem-button" onClick="shareListHideShow('asus')">
+          Asus
+        </div>
+        <div id="asus" class="oem hide">
+          <div class="device-name" id="Z01R">
+            <p>Zenfone 5z <span>Z01R</span></p>
+          </div>
+          <div class="device-name" id="X01BD">
+            <p>Max Pro M2 <span>X01BD</span></p>
+          </div>
+        </div>
+
+        <div id="nokia-button" class="oem-button" onClick="shareListHideShow('nokia')">
+          Nokia
+        </div>
+        <div id="nokia" class="oem hide">
+          <div class="device-name" id="PL2_sprout">
+            <p>6.1 (2018) <span>PL2_sprout</span></p>
+          </div>
+          <div class="device-name" id="DRG_sprout">
+            <p>6.1 Plus <span>DRG_sprout</span></p>
+          </div>
+        </div>
+      </div>
+      <div id="view">
+        <p class="center">Select device</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="downloads">
+      <h1>Some Stats</h1>
+      <div id="links">
+        <section id="ancient_footer">
+          <h3>Total supported devices:</h3>
+          <h4><span class="supportedDevices"></span></h4>
+          <h3>Total Downloads:</h3>
+          <h4><span class="totalDownloads"></span></h4>
+          <h3>Country with most downloads:</h3>
+          <h4>
+            <span class="topGeo"></span><span class="topGeoPercent"></span>
+          </h4>
+          <h3>Operating system on which download most:</h3>
+          <h4>
+            <span class="topOs"></span><span class="topOsPercent"></span>
+          </h4>
+
+          <h6>Stats Updated: <span class="statsUpdated"></span></h6>
+        </section>
+      </div>
+      <p class="copyright">
+        &copy; Ancient. Design: <a href="http://ancient.id/">Ancient Team</a>.
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.4.0/json2html.min.js"></script>
+
+  <script src="assets/js/downloads.js"></script>
+</body>
+
+</html>
